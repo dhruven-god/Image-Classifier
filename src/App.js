@@ -70,7 +70,8 @@ function App() {
   }
   console.log(results);
   return (
-    <div className="bg-slate-200 flex flex-col h-screen">
+    <div className="bg-slate-200 overflow-auto
+   flex flex-col h-screen">
       <Navbar />
       <div className="p-4 flex-grow grid grid-cols-1 gap-0 sm:grid-cols-2 gap-2">
         <center className="pt-24 ">
@@ -121,7 +122,7 @@ function App() {
         <center className="mt-8 sm:mt-72">
           {results.length > 0 && (
             <div className="flex">
-              <div className="block p-6 min-w-full lg:min-w-max rounded-lg shadow-lg bg-white max-w-sm">
+              <div className="block p-6 min-w-full  lg:min-w-max rounded-lg shadow-2xl bg-white max-w-sm">
                 {results.map((result) => {
                   return (
                     <>
