@@ -95,6 +95,7 @@ function App() {
           <hr />
           <div className="container">
             <div className="mt-8">
+              <span><strong>Note: If image does not load, please try different image</strong></span>
               {imageURL && (
                 <img
                   src={imageURL}
@@ -103,7 +104,7 @@ function App() {
                   ref={imageRef}
                   width="320"
                   height="320"
-                  className="rounded-lg"
+                  className="rounded-lg mt-8"
                 />
               )}
             </div>
